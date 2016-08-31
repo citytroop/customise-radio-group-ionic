@@ -1,0 +1,12 @@
+/* override radio button display with custom icon for both states */
+.custom-class-radio .item-radio .radio-icon {
+  visibility: visible !important;
+}
+
+.custom-class .item-radio .radio-icon:before {
+  content: "\f3a6" !important; /*deselected - Ionic class  */
+}
+
+.custom-class .item-radio input:checked + .radio-content .radio-icon:before{
+  content: "\f21b" !important; /*selected Ionic class*/
+}

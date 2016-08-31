@@ -1,0 +1,10 @@
+<html>
+<body>
+	<div class="custom-class"><ion-radio
+	          ng-repeat="someItem in aList"
+	          ng-model="attr.label"
+	          ng-value="'{{someItem.label}}'"
+	          ng-change="addFunction($index)">{{someItem.label | translate}}</ion-radio>
+	</div>
+</body>
+</html>
